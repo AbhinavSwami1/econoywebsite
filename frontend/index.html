@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Economy Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Circular Marketplace</div>
+        <nav class="nav">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <button class="btn" onclick="openModal('loginModal')">Login</button>
+            <button class="btn" onclick="openModal('registerModal')">Register</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the Circular Economy Marketplace</h1>
+        <p>Shop sustainable, eco-friendly products</p>
+        <button class="btn" onclick="scrollToSection('products')">Shop Now</button>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div id="productList" class="product-list"></div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <p>Total: ₹<span id="cartTotal">0</span></p>
+        <button class="btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Circular Economy Marketplace. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
